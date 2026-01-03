@@ -29,20 +29,23 @@
 		30ABE25E2F09C9AD00586CD1 /* FinPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		30ABE28B2F09D04C00586CD1 /* Exceptions for "FinPlanner" folder in "FinPlanner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 30ABE2412F09C9AC00586CD1 /* FinPlanner */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		30ABE2442F09C9AC00586CD1 /* FinPlanner */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				30ABE28B2F09D04C00586CD1 /* Exceptions for "FinPlanner" folder in "FinPlanner" target */,
+			);
 			path = FinPlanner;
-			sourceTree = "<group>";
-		};
-		30ABE2572F09C9AD00586CD1 /* FinPlannerTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FinPlannerTests;
-			sourceTree = "<group>";
-		};
-		30ABE2612F09C9AD00586CD1 /* FinPlannerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FinPlannerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				30ABE2442F09C9AC00586CD1 /* FinPlanner */,
-				30ABE2572F09C9AD00586CD1 /* FinPlannerTests */,
-				30ABE2612F09C9AD00586CD1 /* FinPlannerUITests */,
 				30ABE2432F09C9AC00586CD1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +131,6 @@
 			dependencies = (
 				30ABE2562F09C9AD00586CD1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				30ABE2572F09C9AD00586CD1 /* FinPlannerTests */,
-			);
 			name = FinPlannerTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +150,6 @@
 			);
 			dependencies = (
 				30ABE2602F09C9AD00586CD1 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				30ABE2612F09C9AD00586CD1 /* FinPlannerUITests */,
 			);
 			name = FinPlannerUITests;
 			packageProductDependencies = (
@@ -400,6 +395,7 @@
 				DEVELOPMENT_TEAM = 7R6MFKUCX6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinPlanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -433,6 +429,7 @@
 				DEVELOPMENT_TEAM = 7R6MFKUCX6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinPlanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
