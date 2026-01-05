@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct SolidButton: View {
+    var text: String
+    var solidColor: Color
+    var textColor: Color
+    var isFull: Bool = false
     var body: some View {
         Button {
-            
+            //
         } label: {
-            Text("More information")
-                .cygre(.light, 12)
+            Text(text)
+                .cygre(.regular, 12)
                 .padding(.top, 12)
                 .padding(.bottom, 16)
                 .frame(maxWidth: .infinity)
-                .foregroundStyle(.appBlack)
+                .foregroundStyle(isFull ? .appBlack : textColor)
+                .background(isFull ? solidColor : .appBlack)
+                .clipShape(Capsule())
                 .overlay {
                     Capsule()
-                        .stroke(.appBlack, lineWidth: 1)
+                        .stroke(solidColor, lineWidth: 1)
                 }
         }
     }
